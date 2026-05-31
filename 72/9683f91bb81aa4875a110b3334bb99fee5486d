@@ -1,0 +1,19 @@
+README.md
+  s_5210e3b6500ccd::t_51b10ba973a8b0 70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "729683f91bb81aa4875a110b3334bb99fee5486d",
+  "prompts": {},
+  "sessions": {
+    "s_5210e3b6500ccd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "565a8d2c-2df7-4fa8-b5f9-4976bce37e92",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Marty <saint@ghost.lt>"
+    }
+  }
+}
