@@ -67,6 +67,7 @@ The installer substitutes this directory's path into the plist template. Notes:
 | `HEADLESS` | `true` | Set `false` for the reliable windowed mode (required for Cloudflare). |
 | `BACKUP_DIR` | `./backups` | Where backups are written. |
 | `COMBINE` | `true` | Also write a single combined JSON array at the end. |
+| `SLEEP_MS` | `1000` | Delay between conversation fetches. Raise (e.g. `3000`) if you hit sustained `429` rate-limiting. |
 | `BACKUP_TIMEOUT_MS` | per-request 30s | Per-fetch abort timeout (in `lib/fetch-logic.mjs`). |
 
 ## Re-login

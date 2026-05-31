@@ -11,6 +11,9 @@ const RAW_DIR = path.join(BACKUP_DIR, 'raw');
 const LOGS_DIR = path.join(__dirname, 'logs');
 const HEADLESS = process.env.HEADLESS !== 'false';
 const COMBINE = process.env.COMBINE !== 'false';
+// Delay between conversation fetches. Raise it (e.g. SLEEP_MS=3000) if you hit
+// sustained 429 rate-limiting; lower it to go faster on a cooperative account.
+const SLEEP_MS = Number(process.env.SLEEP_MS || 1000);
 
 fs.mkdirSync(RAW_DIR, { recursive: true });
 fs.mkdirSync(LOGS_DIR, { recursive: true });
@@ -138,7 +141,7 @@ try {
     }
 
     console.log(`progress ${i + 1}/${ids.length} (saved ${savedNew}, skipped ${done.size}, failed ${failures.length})`);
-    await sleep(1000);
+    await sleep(SLEEP_MS);
   }
 
   if (COMBINE) {
