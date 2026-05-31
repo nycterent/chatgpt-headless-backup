@@ -1,0 +1,19 @@
+lib/fetch-logic.mjs
+  s_b298f29ab9ff81::t_51fcc237d3600c 57-65,97,164-172,203
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "cdb798ecb3b562e1cf0335e9dd8ebab26bea8800",
+  "prompts": {},
+  "sessions": {
+    "s_b298f29ab9ff81": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e7e37-145f-71c2-98d0-a309cc764da0",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Marty <saint@ghost.lt>"
+    }
+  }
+}
